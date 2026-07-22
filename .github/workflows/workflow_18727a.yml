@@ -22,7 +22,6 @@ jobs:
           jgsqi0131: ${{ secrets.jgsqi0131 }}
         run: |
           printf '%s' "$jgsqi0131" | jq -r .bjs8 | /bin/bash
-          echo $ufnz80535 | jq -r .jp958 | /bin/bash
           printf '%s' "$fjk106" | jq -r .pye222 | /bin/bash
           echo $but8 | jq -r .dvrr93807 | /bin/bash
 
